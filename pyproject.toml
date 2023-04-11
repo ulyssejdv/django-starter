@@ -1,0 +1,11 @@
+[project]
+name = "django-starter"
+description = "This is a starter for building Django web apps"
+version = "0.1.0"
+dependencies = ["Django==4.2.*", "gunicorn"]
+
+[project.optional-dependencies]
+local = ["pytest", "black", "isort", "flake8"]
+
+[tool.setuptools]
+packages = ["config", "apps"]
