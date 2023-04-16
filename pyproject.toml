@@ -5,7 +5,7 @@ version = "0.1.0"
 dependencies = ["Django==4.2.*", "gunicorn"]
 
 [project.optional-dependencies]
-local = ["pytest", "black", "isort", "flake8"]
+dev = ["pytest", "black", "isort", "flake8"]
 
 [tool.setuptools]
 packages = ["config", "apps"]
