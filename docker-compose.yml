@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.dev
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
