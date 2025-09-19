@@ -9,3 +9,17 @@ dev = ["pytest", "black", "isort", "flake8"]
 
 [tool.setuptools]
 packages = ["config", "apps"]
+
+[tool.hatch.version]
+path = "config/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["config", "apps"]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "black",
+  "isort",
+  "flake8",
+]
